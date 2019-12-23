@@ -333,10 +333,9 @@ add_action( 'cryout_master_footer_hook', 'roseta_master_footer' );
 function roseta_master_footer() {
 	$the_theme = wp_get_theme();
 	do_action( 'cryout_footer_hook' );
-	echo '<div style="display:block;float:right;clear: right;">' . __( "Powered by", "roseta" ) .
-		'<a target="_blank" href="' . esc_html( $the_theme->get( 'ThemeURI' ) ) . '" title="';
-	echo 'Roseta WordPress Theme by ' . 'Cryout Creations"> ' . 'Roseta' .'</a> &amp; <a target="_blank" href="' . "http://wordpress.org/";
-	echo '" title="' . esc_attr__( "Semantic Personal Publishing Platform", "roseta") . '"> ' . sprintf( " %s.", "WordPress" ) . '</a></div>';
+	echo '<div style="display:block;float:right;clear: right;">' . __( "Powered by", "vim" ) .
+		'<a target="_blank" href="" title="';
+	echo '" title="' . esc_attr__( "Semantic Personal Publishing Platform", "vim") . '"> ' . sprintf( " %s.", "Vim" ) . '</a></div>';
 }
 
 add_action( 'cryout_master_footer_hook', 'roseta_copyright' );
